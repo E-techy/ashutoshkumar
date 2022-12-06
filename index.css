@@ -1,0 +1,61 @@
+.main_table tr,th,td{
+    text-align: center;
+    border-radius: 8px;
+
+}
+
+.main_table th{
+    color: rgb(69, 73, 73);
+    background-color: rgb(221, 218, 218);
+ }
+ .main_table tr{
+   color: rgb(15, 132, 132);
+   background-color: rgb(255, 228, 246);
+ }
+ .main_table th:hover{
+    background-color: rgb(128, 126, 123);
+
+    color: rgb(233, 237, 243);
+ }
+ .main_table tr:hover{
+   
+    animation: color-chang 2s infinite;
+ }
+
+ h1,h2,h3{
+    animation: color-change 3s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: red; }
+    20%{ color:rgb(255, 153, 0);}
+    20%{ color:rgb(112, 227, 24);}
+    50% { color: rgb(48, 22, 245); }
+    20%{ color:rgb(217, 41, 162);}
+    20%{ color:rgb(230, 0, 255);}
+    100% { color: red; }
+  }
+  td:hover{
+    font-weight: bold;
+    background-color: rgb(44, 224, 230);
+
+    color: rgb(254, 253, 251);
+  }
+  @keyframes color-chang {
+    0% { background-color: rgb(231, 193, 241); }
+    20%{ background-color:rgb(249, 185, 241);}
+    
+    50% { background-color: rgb(195, 189, 243); }
+   
+    80%{ background-color:rgb(235, 188, 240);}
+    100% { background-color: rgb(252, 194, 194); }
+  }
+  body{
+    background: rgb(203,201,234);
+    background: -moz-linear-gradient(90deg, rgba(203,201,234,1) 0%, rgba(180,180,223,0.12958686892725846) 45%, rgba(104,213,235,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(203,201,234,1) 0%, rgba(180,180,223,0.12958686892725846) 45%, rgba(104,213,235,1) 100%);
+    background: linear-gradient(90deg, rgba(203,201,234,1) 0%, rgba(180,180,223,0.12958686892725846) 45%, rgba(104,213,235,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbc9ea",endColorstr="#68d5eb",GradientType=1);
+
+height: 100vh;
+  }

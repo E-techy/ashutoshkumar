@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh Kumar Singh</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+ <center>
+    <table class="main_table">
+        <h1 >Government Polytechnic Gulzarbagh Patna-7</h1><br>
+        <h2>Computer Science and Engineering (3rd Semester)</h2>
+        <h1>TIME TABLE</h1>
+        <tr>
+         <th>Day/Period</th>
+         <th>I 08:00-09:00 AM</th>
+         <th>II 09:00-10:00 AM</th>
+         <th>III 10:00-11:00 AM</th>
+         <th>11:00-11:30 AM</th>
+         <th>IV 11:30-12:30 PM</th>
+         <th>V 12:30-01:30 PM</th>
+         <th>VI 01:30-02:30 PM</th>
+         
+        </tr>
+      
+        <tr>
+          <th>MONDAY</th>
+          <td>Digital Electronic and Microprocessor (2018304)</td>
+          <td>Computer Organization & Architecture (2018303)</td>
+          <td> ___</td>
+          <td rowspan="6"><h1>R<br>E<br>C<br>E<br>S<br>S</h1></td>
+          <td colspan="2">Digital Electronic and Microprocessor (LAB) (2018307)</td>
+          <td>___</td>
+          
+        </tr>
+      
+        <tr>
+            <th>TUESDAY</th>
+            <td>Digital Electronic and Microprocessor (2018304)</td>
+            <td>___</td>
+            <td>Web Technology (2018305)</td>
+    
+            <td colspan="2">Digital Electronic and Microprocessor (LAB) (2018307)</td>
+            <td>___</td>
+        </tr>
+          
+        <tr>
+            <th>WEDNESDAY</th>
+            <td>Computer Organization & Architecture (2018303)</td>
+            <td>___</td>
+            <td>___</td>
+            
+            <td>Web Technology (LAB)(2018308)</td>
+            <td colspan="2">Computer Organization & Architecture (T.W) (2018309)</td>
+            
+        </tr>
+        <tr>
+            <th>THURSDAY</th>
+            <td>Web Technology (2018305)</td>
+            <td>___</td>
+            <td>___</td>
+            
+            <td>Web Technology (LAB)(2018308)</td>
+            <td>___</td>
+            <td>___</td>
+        </tr>
+        <tr>
+            <th>FRIDAY</th>
+            <td>Computer Organization & Architecture (2018303)</td>
+            <td colspan="2">Computer Organization & Architecture (T.W) (2018309)</td>
+            
+            <td>Digital Electronic and Microprocessor (2018304)</td>
+            <td>___</td>
+            <td>___</td>
+            
+        </tr>
+        <tr>
+            <th>SATURDAY</th>
+            <td>Web Technology (2018305)</td>
+            <td>___</td>
+            <td>___</td>
+            <td>___</td>
+            <td>___</td>
+            <td>___</td>
+        
+
+        </tr>
+      </table><br><br>
+      <h3>Made by- ASHUTOSH KUMAR SINGH <br>
+            Roll-no: 38/CSE/21</h3>
+    </center>
+</body>
+<script>
+setInterval(() => {
+    setTimeout(() => {
+    let speech = new SpeechSynthesisUtterance();
+
+speech.lang = "en-US";
+speech.text = "Hello Everyone, this is Government Polytechnic ,Patna 7, TIME TABLE for, CSE Branch";
+speech.volume =80 ;
+speech.rate = 1;
+speech.pitch = 8;                
+
+window.speechSynthesis.speak(speech);
+}, 2000);
+}, 2000);
+
+</script>
+</html>
