@@ -3,45 +3,47 @@
  * Applies to table rows, headers, and data cells.
  */
 .main_table tr,th,td{
-    text-align: center; /* Centers text horizontally */
-    border-radius: 8px; /* Applies a border-radius for rounded corners */
+    text-align: center; /* Centers text horizontally within the cell */
+    border-radius: 8px; /* Applies a border-radius for rounded corners to cells */
 }
 
 /* Styling for table header cells within the '.main_table' class. */
 .main_table th{
-    color: rgb(69, 73, 73); /* Sets the text color for headers */
-    background-color: rgb(221, 218, 218); /* Sets the background color for headers */
+    color: rgb(69, 73, 73); /* Sets the text color for table headers to a dark gray */
+    background-color: rgb(221, 218, 218); /* Sets the background color for headers to a light gray */
  }
  /* Styling for table rows within the '.main_table' class. */
  .main_table tr{
-   color: rgb(15, 132, 132); /* Sets the text color for rows */
-   background-color: rgb(255, 228, 246); /* Sets the background color for rows */
+   color: rgb(15, 132, 132); /* Sets the text color for table rows to a teal green */
+   background-color: rgb(255, 228, 246); /* Sets the background color for rows to a light pink */
  }
  /* Hover effect for table header cells. */
  .main_table th:hover{
-    background-color: rgb(128, 126, 123); /* Changes background color on hover */
-    color: rgb(233, 237, 243); /* Changes text color on hover */
+    background-color: rgb(128, 126, 123); /* Changes header background color to a medium gray on hover */
+    color: rgb(233, 237, 243); /* Changes header text color to a very light gray on hover */
  }
  /* Hover effect for table rows. */
  .main_table tr:hover{
-    /* Applies a 'color-chang' animation when hovering over rows */
+    /* Applies a 'color-chang' animation when hovering over rows.
+     * This animation changes the background color of the row. */
     animation: color-chang 2s infinite; 
  }
 
  /* Applies a 'color-change' animation to H1, H2, and H3 headings. */
  h1,h2,h3{
-    animation: color-change 3s infinite;
+    animation: color-change 3s infinite; /* Continuously animates text color over 3 seconds */
   }
   
-  /* Defines the 'color-change' keyframe animation for text color. */
+  /* Defines the 'color-change' keyframe animation for text color.
+   * This animation cycles through a series of predefined colors. */
   @keyframes color-change {
     0% { color: red; } /* Starts with red text */
-    20%{ color:rgb(255, 153, 0);} /* Transitions to orange */
-    20%{ color:rgb(112, 227, 24);} /* Transitions to green */
-    50% { color: rgb(48, 22, 245); } /* Transitions to blue */
-    20%{ color:rgb(217, 41, 162);} /* Transitions to purple */
-    20%{ color:rgb(230, 0, 255);} /* Transitions to magenta */
-    100% { color: red; } /* Ends with red, creating a loop */
+    20%{ color:rgb(255, 153, 0);} /* Transitions to orange at 20% mark */
+    20%{ color:rgb(112, 227, 24);} /* (Duplicate) Transitions to green. Note: The first 20% overrides this if they are sequential. */
+    50% { color: rgb(48, 22, 245); } /* Transitions to blue at 50% mark */
+    20%{ color:rgb(217, 41, 162);} /* (Duplicate) Transitions to purple. */
+    20%{ color:rgb(230, 0, 255);} /* (Duplicate) Transitions to magenta. */
+    100% { color: red; } /* Ends with red, creating a seamless loop */
   }
   /* Hover effect for table data cells. */
   td:hover{
@@ -49,24 +51,26 @@
     background-color: rgb(44, 224, 230); /* Changes background color to a light blue on hover */
     color: rgb(254, 253, 251); /* Changes text color to an off-white on hover */
   }
-  /* Defines the 'color-chang' keyframe animation for background color. */
+  /* Defines the 'color-chang' keyframe animation for background color.
+   * This animation cycles through a series of light pastel background colors. */
   @keyframes color-chang {
     0% { background-color: rgb(231, 193, 241); } /* Starts with a light purple background */
-    20%{ background-color:rgb(249, 185, 241);} /* Transitions to a slightly different light purple */
+    20%{ background-color:rgb(249, 185, 241);} /* Transitions to a slightly different light pinkish-purple */
     
-    50% { background-color: rgb(195, 189, 243); } /* Transitions to a more blueish-purple */
+    50% { background-color: rgb(195, 189, 243); } /* Transitions to a more blueish-purple at 50% mark */
    
-    80%{ background-color:rgb(235, 188, 240);} /* Transitions back to a pinkish-purple */
+    80%{ background-color:rgb(235, 188, 240);} /* Transitions back to a pinkish-purple at 80% mark */
     100% { background-color: rgb(252, 194, 194); } /* Ends with a light pink, creating a loop */
   }
   /* Styling for the body element, applying a gradient background. */
   body{
-    background: rgb(203,201,234); /* Fallback background color */
-    /* Linear gradient background from top to bottom (90deg from left to right) */
-    background: -moz-linear-gradient(90deg, rgba(203,201,234,1) 0%, rgba(180,180,223,0.12958686892725846) 45%, rgba(104,213,235,1) 100%); /* Firefox specific */
-    background: -webkit-linear-gradient(90deg, rgba(203,201,234,1) 0%, rgba(180,180,223,0.12958686892725846) 45%, rgba(104,213,235,1) 100%); /* Chrome, Safari specific */
-    background: linear-gradient(90deg, rgba(203,201,234,1) 0%, rgba(180,180,223,0.12958686892725846) 45%, rgba(104,213,235,1) 100%); /* Standard syntax */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbc9ea",endColorstr="#68d5eb",GradientType=1); /* IE specific filter for gradient */
+    background: rgb(203,201,234); /* Fallback background color for browsers that don't support gradients */
+    /* Linear gradient background from top to bottom (effectively 90deg from left to right),
+     * transitioning from a light purple to a lighter blue. */
+    background: -moz-linear-gradient(90deg, rgba(203,201,234,1) 0%, rgba(180,180,223,0.12958686892725846) 45%, rgba(104,213,235,1) 100%); /* Firefox specific syntax */
+    background: -webkit-linear-gradient(90deg, rgba(203,201,234,1) 0%, rgba(180,180,223,0.12958686892725846) 45%, rgba(104,213,235,1) 100%); /* Chrome, Safari specific syntax */
+    background: linear-gradient(90deg, rgba(203,201,234,1) 0%, rgba(180,180,223,0.12958686892725846) 45%, rgba(104,213,235,1) 100%); /* Standard syntax for modern browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbc9ea",endColorstr="#68d5eb",GradientType=1); /* IE specific filter for gradient support */
 
-    height: 100vh; /* Sets the body height to 100% of the viewport height */
+    height: 100vh; /* Sets the body height to 100% of the viewport height, ensuring the gradient covers the entire screen */
   }
